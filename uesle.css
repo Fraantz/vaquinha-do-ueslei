@@ -1,0 +1,96 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Título slogan */
+.slogan {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Layout em colunas */
+.conteudo {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Colunas */
+.coluna {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Texto */
+.coluna.esquerda p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Imagem */
+.imagem {
+  width: 75%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Botão */
+.button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
